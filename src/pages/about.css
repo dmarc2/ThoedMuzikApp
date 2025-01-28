@@ -1,0 +1,28 @@
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0.3rem;
+}
+#hero> *:not(.rectangle) {
+    margin: 0 0.3rem;
+}
+#hero> .rectangle {
+    position: absolute;
+    top: 0;
+    left: 9rem;
+    width: 300px;
+    height: 90%;
+    background-color: #FBB13C;
+    z-index: -1;
+}
+#hero> .image-placeholder {
+    width: 45%;
+    height: 300px;
+    background-color: black;
+}
+#hero> .text {
+   width: 50%; 
+}

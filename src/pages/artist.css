@@ -1,0 +1,128 @@
+#artist> header {
+    width: 100%;
+    height: 100vh;
+    /* height: max-content; */
+    padding-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #14342B;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+#artist> header> div:first-child {
+    width: 40%;
+    margin-left: 2rem;
+}
+#artist> header> div:first-child> img {
+    width: 100%;
+    position: relative;
+    top: 15rem;
+}
+#artist> header> div:last-child {
+    max-width: 600px;
+}
+#artist> header> div:last-child> div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem;
+    max-width: 600px;
+    align-items: center;
+    margin: 0.6rem 0;
+    font-size: 16px;
+}
+#artist> header> div:last-child> div:nth-child(3)> * {
+    margin: 0.6rem 0;
+    font-size: larger;
+}
+#artist> header> div:last-child> div:nth-child(4) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#artist> header> div:last-child> div:nth-child(4)> * {
+    margin: 0 0.6rem ;
+}
+#artist> header> div:last-child> div> p:hover {
+  cursor: pointer;
+  background-color: #00000044;
+}
+@media (max-width: 900px) {
+    #artist> header {
+        padding-top: 7rem;
+    }
+    /* #artist> header> div:first-child> img {
+        display: none;
+    } */
+    #artist> header> div:last-child> * {
+        font-size: 24px;
+    }
+    #artist> header> div:first-child {
+        display: none;
+    }
+}
+/* .artist-hero-placeholder {
+    position: relative;
+    color: lightgray;
+    background-color: black;
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../../public/album_cover_dmarc.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.artist-hero-placeholder> .hero-img {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    width: 400px;
+    height: 400px;
+    z-index: 2;
+    background-color: black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.artist-hero-placeholder> .hero-heading {
+    font-size: 3rem;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    left: 1rem;
+    bottom: 9rem;
+    font-weight: 700;
+    max-width: 50%;
+}
+.artist-hero-placeholder> .filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.artist-hero-placeholder> .index-wheel {
+    position: absolute;
+    bottom: 1rem;
+    left: 28%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    z-index: 1;
+}
+.artist-hero-placeholder> .index-wheel> div.dot {
+    margin: 0 1rem;
+}
+#artist> section:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FBB13C;
+    padding: 0 1rem;
+} */

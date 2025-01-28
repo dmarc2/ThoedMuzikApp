@@ -1,0 +1,31 @@
+#SignInPage {
+    width: 100vw;
+    height: 100vh;
+}
+#SignInPage> nav {
+    position: relative;
+}
+#SignInPage> h1 {
+    text-align: center;
+}
+#SignInPage> div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+#SignInPage> div:nth-child(3)> form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.8);
+    padding: 1rem;
+    border-radius: 10px;
+}
+#SignInPage> div:nth-child(3)> form> * {
+    margin: 0.3rem 0;
+}
+#SignInPage> div:nth-child(3)> form> a {
+    color: blue;
+    text-decoration: underline;
+}

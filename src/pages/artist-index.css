@@ -1,0 +1,31 @@
+#artist-index> nav {
+    position: relative;
+}
+#artist-index> div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.artist-card  {
+    display: flex;
+    margin: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding-right: 0.3rem;
+}
+.artist-card> .artist-img  {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 10px;
+    margin-right: 0.3rem;
+}
+.follow-btn {
+    display: none;
+    height: max-content;
+    width: max-content;
+    margin: auto 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}

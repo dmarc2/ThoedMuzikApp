@@ -1,0 +1,158 @@
+#AdminPanel> nav {
+    position: relative;
+}
+input, button {
+    padding: 0.3rem;
+}
+main {
+    padding: 0.6rem;
+}
+.pane {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: 1px solid rgb(185, 185, 185);
+    margin: 1.3rem 0;
+}
+#edit-personal-page {
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem;
+}
+#edit-personal-page> button {
+    width: fit-content;
+}
+#edit-personal-page> label:not(:first-of-type) {
+    margin-top: 2rem;
+}
+#hero-cta-list, #hero-slides-list {
+    margin: 0.6rem 0;
+    display: flex;
+}
+.cta, .slide {
+    padding: 0.3rem;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 5px;
+}
+.cta:hover, .slide:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+#hero-personal-image-container {
+    display: flex;
+}
+#hero-personal-image-container> * {
+    margin: 0 0.3rem;
+}
+#muzik-db-pane> div> #tabs-container {
+    display: flex;
+    align-items: baseline;
+    background-color: #393939;
+}
+#muzik-db-pane> div> #tabs-container> .tab {
+    background-color: whitesmoke;
+    padding: 0.6rem 1rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid lightgray;
+}
+#muzik-db-pane> div> #tabs-container> .tab.selected {
+    background-color: #999999;
+}
+#muzik-db-pane> div> #tabs-container> .tab:hover {
+    cursor: pointer;
+    background-color: #999999;
+}
+#muzik-db-pane> div> #tab-content> #view-tab-content> div:first-child> input:not(:first-of-type) {
+    margin-left: 1.9rem;
+}
+#muzik-db-pane> div> #tab-content> #add-tab-content> div:nth-child(2) {
+    display: flex;
+}
+#muzik-db-pane> div> #tab-content> #add-tab-content> div:nth-child(2)> div:first-child {
+    display: flex;
+    flex-direction: column;
+}
+#muzik-db-pane> div> #tab-content> #add-tab-content> div:nth-child(2)> div:first-child> input {
+    margin-left: 1rem;
+}
+#muzik-db-pane> div> #tab-content> #add-tab-content> div:nth-child(2)> div:first-child> label:nth-child(10),
+ #muzik-db-pane> div> #tab-content> #add-tab-content> div:nth-child(2)> div:first-child> label:nth-child(14) {
+    margin-left: 1rem;
+}
+#muzik-db-pane> div> #tab-content> #add-tab-content> div:nth-child(2)> div:first-child> div> input:first-child,
+    #muzik-db-pane> div> #tab-content> #add-tab-content> div:nth-child(2)> div:first-child> ul {
+    margin-left: 2rem;
+}
+#muzik-db-pane> div> #tab-content> #add-tab-content> div:nth-child(2)> div:first-child> ul {
+    list-style: none;
+    background-color: white;
+    margin-top: 0.3rem;
+    border: 1px solid lightgray;
+    padding: 0.1rem;
+    height: 100px;
+    width: 225px;
+    overflow-y: scroll;
+}
+#muzik-db-pane> div> #tab-content> #add-tab-content> div:nth-child(2)> div:first-child> ul> li:nth-child(even) {
+    background-color: #f9f9f9;
+}
+#muzik-db-pane> div> #tab-content> #add-tab-content> div:nth-child(2)> div {
+    padding: 0 1rem;
+}
+#add-tab-content > div:nth-child(2) > div:nth-child(1) > button {
+    width: max-content;
+    margin-left: auto;
+    margin-top: 0.3rem;
+}
+#add-tab-content > div:nth-child(3) {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.6rem;
+}
+#add-tab-content > div:nth-child(3)> button {
+    margin: 0 0.3rem;
+}
+#muzik-db-pane> div> #tab-content> div> div:first-child> input {
+    margin-left: 1.9rem;
+}
+#remove-tab-content > div:nth-child(2) > div > div:nth-child(1) > button {
+    margin-top: 0.6rem;
+}
+#remove-tab-content > div:nth-child(2) > div > div button {
+    color: red;
+}
+
+table {
+    margin: 1rem 0;
+}
+table> thead> tr {
+    background-color: #e0e0e0;
+}
+table> tbody> tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+table> tbody> tr:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+table> tbody> tr:active {
+    background-color: #41b3ff;
+}
+table th {
+    padding: 0 0.3rem;
+}
+table td {
+    border: 1px solid lightgray;
+    padding: 0 0.3rem;
+    overflow: hidden;
+    overflow-x: scroll;
+    max-width: 500px;
+}
+
+/* Hide scroll bar in WebKit browsers */
+table td::-webkit-scrollbar {
+    display: none;
+}
+table tr.selected {
+    background-color: gray !important;
+}

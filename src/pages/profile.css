@@ -1,0 +1,54 @@
+#Profile> nav {
+    position: relative;
+}
+#account-settings {
+    padding: 0.6rem;
+}
+#account-settings> div {
+    background-color: whitesmoke;
+    width: 80%;
+    /* height: 80vh; */
+    margin: 0 auto;
+    margin-top: 0.3rem;
+    display: flex;
+}
+#account-settings> div> aside {
+    padding: 0.3rem;
+}
+#account-settings> div> aside> ul {
+    list-style: none;
+}
+#account-settings> div> aside> ul> li {
+    padding: 0.3rem;
+}
+#account-settings> div> aside> ul> li:last-child {
+    color: red;
+}
+#account-settings> div> aside> ul> li:hover {
+    cursor: pointer;
+    background-color: rgb(226, 226, 226);
+}
+#account-settings> div> div {
+    border: 1px solid rgb(185, 185, 185);
+    flex: 1;
+    padding: 0.3rem;
+}
+#account-settings> div> div> h3 {
+    margin-bottom: 0.6rem;
+}
+#account-settings> div> div> div {
+    display: flex;
+    align-items: center;
+}
+#account-settings> div> div> div> * {
+    margin: 0 0.3rem;
+}
+#account-settings> div> div> div> .profile-img {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 100%;
+}
+#account-settings> div> div> div> button {
+    margin: 0 auto;
+}

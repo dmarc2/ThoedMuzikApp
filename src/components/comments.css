@@ -1,0 +1,53 @@
+#comments-sect {
+}
+#comments-sect> div:nth-child(2) {
+    display: flex;
+}
+#comments-sect> div:nth-child(2)> * {
+    margin: 0 0.3rem;
+}
+#comments-sect> div:nth-child(2)> input {
+    width: 80%;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.comment-btn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+.comment {
+    display: flex;
+    width: 100%;
+    margin: 0.3rem 0;
+}
+.comment> .profile-img {
+    width: 45px;
+    height: 45px;
+    background-color: black;
+    border-radius: 100%;
+    margin-right: 0.3rem;
+}
+.comment> div:nth-child(2) {
+    margin: 0.3rem 0;
+}
+.comment> div:nth-child(2)> span:first-child {
+    border-radius: 20px;
+    background-color: #d3d3d3;
+    color: white;
+    padding: 0.2rem;
+    margin-right: 0.3rem;
+}
+.comment> div:nth-child(2)> span:nth-child(2) {
+    font-size: smaller;
+}
+.comment> img {
+    width: 30px;
+    height: 30px;
+    transform: rotate(90deg);
+    margin-left: auto; 
+}
+.comment> img:hover {
+    cursor: pointer;
+}

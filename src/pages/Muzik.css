@@ -1,0 +1,115 @@
+#Muzik> nav {
+    position: relative;
+}
+/* #Muzik> header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FBB13C;
+    padding: 0 1rem;
+}
+.muzik-hero-placeholder {
+    position: relative;
+    background-color: black;
+    width: 80%;
+    height: 80vh;
+}
+.muzik-hero-placeholder> .index-wheel {
+    position: absolute;
+    bottom: 1rem;
+    left: 28%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.muzik-hero-placeholder> .index-wheel> div.dot {
+    margin: 0 1rem;
+} */
+#albums-mixtapes {
+    padding: 1rem;
+}
+#albums-mixtapes> div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#albums-mixtapes> div> div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    overflow: hidden;
+}
+#albums-mixtapes> div> div:nth-child(2)> *:hover {
+    cursor: pointer;
+    background-size: 90%;
+}
+.album-mixtape-placeholder {
+    background-color: black;
+    width: 50%;
+    width: 250px;
+    height: 250px;
+    background-position:center;
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.card-style2-img-placeholder {
+    background-color: black;
+    background-image: url('../../public/tape_placeholder.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+.card-style2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: #950C15 dashed 3px;
+    padding: 0.6rem;
+    width: 50%;
+    background-color: var(--bg-color);
+}
+.card-style2:hover {
+    cursor: pointer;
+    border: #fbc833 dashed 3px;
+}
+.card-style2> * {
+    margin: 0 0.3rem;
+}
+#all-songs {
+    background-image: url('../../public/music_notes_bg.png');
+}
+#all-songs> h2 {
+    background-color: var(--bg-color);
+}
+#all-songs> div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#all-songs> button {
+    width: 50%;
+    margin: 0 24.5vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+}
+@media (max-width: 900px) {
+    #albums-mixtapes> div> div:nth-child(2) {
+        overflow-x: scroll;
+    }
+}
+/* @media (min-height:700px) {
+  #slideshow {
+    max-height: 630px;
+  }
+}
+@media (min-height:1150px) {
+  #slideshow {
+    max-height: 50vh;
+  }
+} */
