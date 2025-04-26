@@ -4,7 +4,8 @@ const bcrypt = require('bcryptjs');
 const express = require('express');
 const cors = require("cors");
 
-const thoedmuzikdb = new sqlite3.Database('C:\\Users\\marcu\\thoedmuzik.db', (error) => {
+// const thoedmuzikdb = new sqlite3.Database('C:\\Users\\marcu\\thoedmuzik.db', (error) => {
+const thoedmuzikdb = new sqlite3.Database('./thoedmuzik.db', (error) => {
     if(error) {
         console.log("Could not connect to the thoedmuzikdb!\n" + error.message);
     }
@@ -14,7 +15,8 @@ const thoedmuzikdb = new sqlite3.Database('C:\\Users\\marcu\\thoedmuzik.db', (er
 });
 
 //Create an SQLite database
-const muzikdb = new sqlite3.Database('C:\\Users\\marcu\\music.db', (error) => {
+// const muzikdb = new sqlite3.Database('C:\\Users\\marcu\\music.db', (error) => {
+const muzikdb = new sqlite3.Database('./music.db', (error) => {
     if(error) {
         console.log("Could not connect to the muzikdb!\n" + error.message);
     }
