@@ -26,7 +26,7 @@ const muzikdb = new sqlite3.Database('C:\\Users\\marcu\\music.db', (error) => {
 const app = express();
 app.use(express.json());
 app.use(cors({ origin: true }));
-const port = 3000;
+const port = process.env.PORT ||3000;
 
 /*
     Insert a new email into the newsletter table.
