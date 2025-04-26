@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const apiClient = axios.create({
 //   baseURL: 'http://localhost:3000', // Your API base URL
-  baseURL: 'https://thoedmuzikapp.onrender.com:3000', // Your API base URL
+  baseURL: 'https://thoedmuzikapp.onrender.com', // Your API base URL
   // Other configuration options (headers, timeout, etc.)
   headers: {"Access-Control-Allow-Origin": "http://localhost:3001",
       "Access-Control-Allow-Headers": "*"
