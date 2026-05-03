@@ -4,15 +4,16 @@ const apiClient = axios.create({
 //   baseURL: 'http://localhost:3000', // Your API base URL
   baseURL: 'https://thoedmuzikapp.onrender.com', // Your API base URL
   // Other configuration options (headers, timeout, etc.)
-  headers: {"Access-Control-Allow-Origin": "http://localhost:3001",
-      "Access-Control-Allow-Headers": "*"
-  },
+//   headers: {"Access-Control-Allow-Origin": "http://localhost:3001",
+//       "Access-Control-Allow-Headers": "*"
+//   },
+    timeout: 10000,
 });
 
 async function getArtistData(name) {
     const r = await apiClient.get("/api/artist/"+name+"/data");
     
-    if(r.data.length == 0) {
+    if(r.data.length === 0) {
         return [];
     }
 
@@ -35,7 +36,7 @@ async function getArtistData(name) {
 async function getArtistSlides(name) {
     const r = await apiClient.get("/api/artist/"+name+"/slides");
 
-    if(r.data.length == 0) {
+    if(r.data.length === 0) {
         return [];
     }
     
